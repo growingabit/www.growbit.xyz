@@ -1,5 +1,5 @@
 # www.growbit.xyz
-www.growbit.xyz
+[![Build Status](https://travis-ci.org/growingabit/www.growbit.xyz.svg?branch=master)](https://travis-ci.org/growingabit/www.growbit.xyz)
 
 # run locally
 `cd html5up-stellar && python -m SimpleHTTPServer 8000`
