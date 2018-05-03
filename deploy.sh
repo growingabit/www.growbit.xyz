@@ -4,7 +4,7 @@ set -e
 
 gsutil -m \
     -h "Cache-Control:public, max-age=3600" \
-    cp -R ./html5up-stellar/ gs://www-growbit-xyz-backend/
+    cp -R ./html5up-stellar gs://www-growbit-xyz-backend
 
 gsutil -m acl ch -r -u AllUsers:R gs://www-growbit-xyz-backend
 
