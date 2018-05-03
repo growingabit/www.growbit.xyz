@@ -28,7 +28,7 @@ before_script:
 script:
   - cd html5up-stellar
   - gsutil -m -h "Cache-Control:public, max-age=3600" cp -Z -R . gs://www.growbit.xyz/
-  - gcloud --verbosity debug compute url-maps invalidate-cdn-cache growingabit-io --path "/*"
+  - gcloud --verbosity debug compute url-maps invalidate-cdn-cache growingabit-io --path "/*" --host www.growbit.xyz
 
 notifications:
   email:
