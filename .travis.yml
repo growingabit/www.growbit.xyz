@@ -31,4 +31,6 @@ script:
   - gcloud --verbosity debug compute url-maps invalidate-cdn-cache growingabit-io --path "/*"
 
 notifications:
-  email: false
+  email:
+    on_failure: change
+    on_success: change
