@@ -14,7 +14,7 @@ before_install:
   - sudo apt-get update && sudo apt-get install -y google-cloud-sdk
 
 before_script:
-   - openssl aes-256-cbc -K $encrypted_492bb558f853_key -iv $encrypted_492bb558f853_iv -in travis-cigrowbit-52554fcb00cd.json.enc -out travis-cigrowbit-52554fcb00cd.json -d
+   - openssl aes-256-cbc -K $encrypted_ad2dd71ccaf7_key -iv $encrypted_ad2dd71ccaf7_iv -in travis-cigrowbit-52554fcb00cd.json.enc -out travis-cigrowbit-52554fcb00cd.json -d
    - gcloud auth activate-service-account "travis-ci@growbit-0.iam.gserviceaccount.com" --key-file=travis-cigrowbit-52554fcb00cd.json
    - gcloud config set project growbit-0
 
