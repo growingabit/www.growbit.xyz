@@ -26,4 +26,6 @@ before_script:
    - gcloud config set project growbit-0
 
 script:
-  - ./deploy.sh
+  - cd html5up-stellar
+  - gsutil -m -h "Cache-Control:public, max-age=3600" cp -R . gs://www.growbit.xyz/
+  - gcloud compute url-maps invalidate-cdn-cache growingabit-io --path "/*"
