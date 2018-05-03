@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 gsutil -m \
     -h "Cache-Control:public, max-age=3600" \
     cp -R ./html5up-stellar/ gs://www-growbit-xyz-backend/
